@@ -6,9 +6,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-        # Define the path to your CSV file
-    # file_path = os.path.join(os.path.dirname(__file__), 'sheltersCSV.csv')
-
+    # Define the path to your CSV file
+    file_path = os.path.join(os.path.dirname(__file__), 'sheltersCSV.csv')
+    print(file_path)
+    
     # Load the CSV file into a pandas DataFrame
     # df = pd.read_csv(file_path)
     # locations = df.to_json
